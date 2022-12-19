@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProgressBar } from 'react-bootstrap'
-import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight, FaHeadphonesAlt, FaRegAddressCard, FaRegFile, FaRegSmile } from 'react-icons/fa';
 import { Data } from '../public/Data';
 const About = () => {
     const {aboutData} = Data;
@@ -52,29 +52,29 @@ const About = () => {
                 <div className="row">
                     <div className="col-lg-3 col-md-6">
                         <div className="count-box">
-                            <i className="bi bi-emoji-smile" />
-                            <span data-purecounter-start={1} data-purecounter-end={90} data-purecounter-duration={10} className="purecounter" />
+                            <i><FaRegSmile/></i>
+                            <span className="purecounter">788</span>
                             <p>Happy Clients</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
                         <div className="count-box">
-                            <i className="bi bi-journal-richtext" />
-                            <span data-purecounter-start={0} data-purecounter-end={521} data-purecounter-duration={1} className="purecounter" />
+                            <i><FaRegFile/></i>
+                            <span className="purecounter">788</span>
                             <p>Projects</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div className="count-box">
-                            <i className="bi bi-headset" />
-                            <span data-purecounter-start={0} data-purecounter-end={1463} data-purecounter-duration={1} className="purecounter" />
+                            <i><FaHeadphonesAlt/></i>
+                            <span className="purecounter">788</span>
                             <p>Hours Of Support</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div className="count-box">
-                            <i className="bi bi-award" />
-                            <span data-purecounter-start={0} data-purecounter-end={24} data-purecounter-duration={1} className="purecounter" />
+                            <i><FaRegAddressCard/></i>
+                            <span className="purecounter">88</span>
                             <p>Awards</p>
                         </div>
                     </div>
