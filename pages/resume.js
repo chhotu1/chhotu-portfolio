@@ -1,5 +1,5 @@
 import React from 'react'
-import { Data } from '../public/data'
+import { Data } from '../public/Data'
 const Resume = () => {
   const {resumeData} = Data;
   return (
