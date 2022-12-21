@@ -1193,3 +1193,59 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.slick-dots {
+  bottom: 0;
+  li{
+    width: 55px;
+    height: 3px;
+    margin: 0 10px;
+    // background-color: #18d26e;
+    background-color: #fff;
+    @media(max-width:767px){
+      width: 30px;
+    }
+
+
+    &.slick-active {
+      button {
+        &:before {
+          background-color: #18d26e;
+        }
+      }
+    }
+    button {
+      width: 55px;
+      height: 3px;
+      &:before {
+        background-color: #b0b1b5;
+      }
+
+      @media(max-width:767px) {
+        width: 40px;
+      }
+
+      &::before {
+        width: 55px;
+        height: 3px;
+        @media(max-width:767px){
+          width:30px;
+        }
+      &::before{
+          width: 55px;
+          height: 3px;
+          @media(max-width:767px){
+            width:30px;
+          }
+          content: "";
+          // color: $yellow;
+          background-color:#e0e4fb;
+          opacity: 1;
+          color: #fff;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+}

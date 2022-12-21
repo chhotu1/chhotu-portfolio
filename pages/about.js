@@ -1,9 +1,18 @@
 import React from 'react'
-import { ProgressBar } from 'react-bootstrap'
+import { ProgressBar } from 'react-bootstrap';
+import Slider from "react-slick";
 import { FaChevronRight, FaHeadphonesAlt, FaRegAddressCard, FaRegFile, FaRegSmile } from 'react-icons/fa';
 import { Data } from '../public/Data';
 const About = () => {
     const {aboutData} = Data;
+    const settings = {
+        dots: true,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      };
     return (
         <section id="about" className="about section-show">
             {/* ======= About Me ======= */}
@@ -14,7 +23,7 @@ const About = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/me.jpg" className="img-fluid" alt="" />
+                        <img src="assets/img/me.jpg" className="img-fluid" alt="" style={{height:360,width:'100%'}} />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3>Software Engineer</h3>
@@ -190,6 +199,9 @@ const About = () => {
                 </div>
                 <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay={100}>
                     <div className="swiper-wrapper">
+
+                    <Slider {...settings} >
+                       
                         <div className="swiper-slide">
                             <div className="testimonial-item">
                                 <p>
@@ -250,6 +262,7 @@ const About = () => {
                                 <h4>Entrepreneur</h4>
                             </div>
                         </div>{/* End testimonial item */}
+                        </Slider>
                     </div>
                     <div className="swiper-pagination" />
                 </div>
