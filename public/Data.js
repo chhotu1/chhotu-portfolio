@@ -10,7 +10,12 @@ export const Data = {
         email: "chhotukumarsow@gmail.com",
         address: "Khizersarai gaya,Bihar India,824233",
         long_description: "A seasoned profession in Software Development. Experience React developer and highly skilled in brainstorming and coding features and enhancements. To contribute my best efforts to the organization with hard work and dedication for the development of the organization.Possesses an understanding developing end-to-end application as per client requirements and quality norms. Adept at conducting automation testing and  performing regular audits to fix bugs & improve work efficiency",
-        short_description: "I am software engineer"
+        short_description: "I am software engineer",
+        designation:"Software Engineer",
+        linkedin:"https://in.linkedin.com/in/chhotu-sow-74797318b",
+        facebook:"https://www.facebook.com/",
+        twitter:"https://www.twitter.com/",
+        instagram:"https://www.instagram.com/"
     },
     aboutData: {
         skill: [
@@ -31,6 +36,29 @@ export const Data = {
             { id: 15, title: "FLASK", rank: 30 },
             { id: 16, title: "ANDROID", rank: 30 },
         ],
+        testimonials: [
+            {
+                name: "Sumant", image: "assets/img/testimonials/sumant.jpg", designation: "React native & Laravel developer",
+                description: "Experienced software engineer with a demonstrated history of working in the information technology and services industry.skilled in Laravel,angular,react js,ionic,react native and flutter"
+            },
+            {
+                name: "Priya Raj", image: "assets/img/testimonials/priya.jpg", designation: "Graphic designer & angular developer",
+                description: "Angular Developer with 2+ years of professional experience in Development and User Interface Development.Tech stack: Reactjs, JavaScript, jQuery, React Native, HTML, CSS, Bootstrap.Experts in Responsive Design and analyzing and fixing bugs quickly."
+            },
+            {
+                name: "Chhotu sow", image: "assets/img/testimonials/chhotu.jpg", designation: "MERN & MEARN",
+                description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
+            },
+            {
+                name: "Bhola kumar", image: "assets/img/testimonials/bhola.jpg", designation: "MERN & MEARN",
+                description: "To become a successful person in a globally renowned organization that would help me to utilize my technical skills and provide me with opportunities for professional growth. Seeking assignments in Software development (Programming) / Web Development(React JS, PHP). Willing to work as a key player in challenging & creative environment. I am an optimistic and enthusiastic individual who enjoys exploring various aspects of life while being highly flexible and adaptive. My personal attributes are adaptability, optimism & sincerity towards the work i do"
+            },
+            {
+                name: "Mukesh kumar", image: "assets/img/testimonials/testimonials-1.jpg", designation: "Nodejs developer",
+                description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
+            },
+        ],
+        interests:["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"],
     },
     resumeData: {
         education: [
@@ -49,8 +77,8 @@ export const Data = {
                 ],
                 projects: [
                     { link: "https://www.pixlerlab.com/", technology: "Nextjs,Nodejs,Mongodb", description: "" },
-                    { link: "https://hadsup.com/", technology: "Nextjs", description: "" }, 
-                    { link: "https://app.hadsup.com/", technology: "Angular", description: "" }, 
+                    { link: "https://hadsup.com/", technology: "Nextjs", description: "" },
+                    { link: "https://app.hadsup.com/", technology: "Angular", description: "" },
                     { link: "https://1099prep.com/", technology: "Reactjs,MYsql,Laravel", description: "" },
                 ],
             },

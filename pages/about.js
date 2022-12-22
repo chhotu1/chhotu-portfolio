@@ -1,10 +1,10 @@
 import React from 'react'
 import { ProgressBar } from 'react-bootstrap';
 import Slider from "react-slick";
-import { FaChevronRight, FaHeadphonesAlt, FaRegAddressCard, FaRegFile, FaRegSmile } from 'react-icons/fa';
+import { FaChevronRight, FaHeadphonesAlt, FaQuoteLeft, FaQuoteRight, FaRegAddressCard, FaRegFile, FaRegSmile } from 'react-icons/fa';
 import { Data } from '../public/Data';
 const About = () => {
-    const {aboutData} = Data;
+    const { aboutData,aboutMe } = Data;
     const settings = {
         dots: true,
         infinite: true,
@@ -12,7 +12,35 @@ const About = () => {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
-      };
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    dots: false,
+                },
+            },
+        ],
+    };
     return (
         <section id="about" className="about section-show">
             {/* ======= About Me ======= */}
@@ -23,36 +51,32 @@ const About = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/me.jpg" className="img-fluid" alt="" style={{height:360,width:'100%'}} />
+                        <img src="assets/img/me.jpg" className="img-fluid" alt="" style={{ height: 360, width: '100%' }} />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Software Engineer</h3>
+                        <h3>{aboutMe.designation}</h3>
                         <p className="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
+                            {aboutMe.short_description}
                         </p>
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i><FaChevronRight/></i> <strong>Birthday:</strong> <span>14 August 1996</span></li>
-                                    <li><i><FaChevronRight/></i> <strong>Website:</strong> <span>chhotu-portfolio.vercel.app</span></li>
-                                    <li><i><FaChevronRight/></i> <strong>Phone:</strong> <span>+918210118348</span></li>
-                                    <li><i><FaChevronRight/></i> <strong>City:</strong> <span>Khizersarai gaya,bihar India,824233</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>Birthday:</strong> <span>{aboutMe.dob}</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>Website:</strong> <span>{aboutMe.website}</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>Phone:</strong> <span>{aboutMe.phone}</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>City:</strong> <span>{aboutMe.address}</span></li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i><FaChevronRight/></i> <strong>Age:</strong> <span>30</span></li>
-                                    <li><i><FaChevronRight/></i> <strong>Degree:</strong> <span>Master</span></li>
-                                    <li><i><FaChevronRight/></i> <strong>PhEmailone:</strong> <span>chhotukumarsow@gmail.com</span></li>
-                                    <li><i><FaChevronRight/></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>Age:</strong> <span>{aboutMe.age}</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>Degree:</strong> <span>{aboutMe.degree}</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>PhEmailone:</strong> <span>{aboutMe.email}</span></li>
+                                    <li><i><FaChevronRight /></i> <strong>Freelance:</strong> <span>{aboutMe.freelance}</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <p>
-                            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                        </p>
+                        <p>{aboutMe.long_description}</p>
                     </div>
                 </div>
             </div>{/* End About Me */}
@@ -61,28 +85,28 @@ const About = () => {
                 <div className="row">
                     <div className="col-lg-3 col-md-6">
                         <div className="count-box">
-                            <i><FaRegSmile/></i>
+                            <i><FaRegSmile /></i>
                             <span className="purecounter">788</span>
                             <p>Happy Clients</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
                         <div className="count-box">
-                            <i><FaRegFile/></i>
+                            <i><FaRegFile /></i>
                             <span className="purecounter">788</span>
                             <p>Projects</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div className="count-box">
-                            <i><FaHeadphonesAlt/></i>
+                            <i><FaHeadphonesAlt /></i>
                             <span className="purecounter">788</span>
                             <p>Hours Of Support</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div className="count-box">
-                            <i><FaRegAddressCard/></i>
+                            <i><FaRegAddressCard /></i>
                             <span className="purecounter">88</span>
                             <p>Awards</p>
                         </div>
@@ -95,21 +119,18 @@ const About = () => {
                     <h2>Skills</h2>
                 </div>
                 <div className="row skills-content">
-                    
-                        {aboutData && aboutData.skill.map((item,index)=>{
-                            return(
-                                <div className="col-lg-6" key={index}>
+                    {aboutData && aboutData.skill.map((item, index) => {
+                        return (
+                            <div className="col-lg-6" key={index}>
                                 <div className="progress" >
                                     <span className="skill">{item.title} <i className="val">{item.rank}%</i></span>
                                     <div className="progress-bar-wrap">
                                         <ProgressBar now={item.rank} />
-                                        {/* <div className="progress-bar" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} /> */}
                                     </div>
                                 </div>
-                                </div>
-
-                            )
-                        })}
+                            </div>
+                        )
+                    })}
                 </div>
             </div>{/* End Skills */}
             {/* ======= Interests ======= */}
@@ -118,80 +139,18 @@ const About = () => {
                     <h2>Interests</h2>
                 </div>
                 <div className="row">
-                    <div className="col-lg-3 col-md-4">
-                        <div className="icon-box">
-                            <i className="ri-store-line" style={{ color: '#ffbb2c' }} />
-                            <h3>Lorem Ipsum</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
-                        <div className="icon-box">
-                            <i className="ri-bar-chart-box-line" style={{ color: '#5578ff' }} />
-                            <h3>Dolor Sitema</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
-                        <div className="icon-box">
-                            <i className="ri-calendar-todo-line" style={{ color: '#e80368' }} />
-                            <h3>Sed perspiciatis</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                        <div className="icon-box">
-                            <i className="ri-paint-brush-line" style={{ color: '#e361ff' }} />
-                            <h3>Magni Dolores</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-database-2-line" style={{ color: '#47aeff' }} />
-                            <h3>Nemo Enim</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-gradienter-line" style={{ color: '#ffa76e' }} />
-                            <h3>Eiusmod Tempor</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-file-list-3-line" style={{ color: '#11dbcf' }} />
-                            <h3>Midela Teren</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-price-tag-2-line" style={{ color: '#4233ff' }} />
-                            <h3>Pira Neve</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-anchor-line" style={{ color: '#b2904f' }} />
-                            <h3>Dirada Pack</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-disc-line" style={{ color: '#b20969' }} />
-                            <h3>Moton Ideal</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-base-station-line" style={{ color: '#ff5828' }} />
-                            <h3>Verdo Park</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 mt-4">
-                        <div className="icon-box">
-                            <i className="ri-fingerprint-line" style={{ color: '#29cc61' }} />
-                            <h3>Flavor Nivelanda</h3>
-                        </div>
-                    </div>
+                    {aboutData.interests.map((item, index) => {
+                        return (
+                            <div className="col-lg-3 col-md-4 mt-2" key={index}>
+                                <div className="icon-box">
+                                    <i className="ri-store-line" />
+                                    <h3>{item}</h3>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
-            </div>{/* End Interests */}
+            </div>
             {/* ======= Testimonials ======= */}
             <div className="testimonials container">
                 <div className="section-title">
@@ -200,68 +159,23 @@ const About = () => {
                 <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay={100}>
                     <div className="swiper-wrapper">
 
-                    <Slider {...settings} >
-                       
-                        <div className="swiper-slide">
-                            <div className="testimonial-item">
-                                <p>
-                                    <i className="bx bxs-quote-alt-left quote-icon-left" />
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                                    <i className="bx bxs-quote-alt-right quote-icon-right" />
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                            </div>
-                        </div>{/* End testimonial item */}
-                        <div className="swiper-slide">
-                            <div className="testimonial-item">
-                                <p>
-                                    <i className="bx bxs-quote-alt-left quote-icon-left" />
-                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                    <i className="bx bxs-quote-alt-right quote-icon-right" />
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                            </div>
-                        </div>{/* End testimonial item */}
-                        <div className="swiper-slide">
-                            <div className="testimonial-item">
-                                <p>
-                                    <i className="bx bxs-quote-alt-left quote-icon-left" />
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                                    <i className="bx bxs-quote-alt-right quote-icon-right" />
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                            </div>
-                        </div>{/* End testimonial item */}
-                        <div className="swiper-slide">
-                            <div className="testimonial-item">
-                                <p>
-                                    <i className="bx bxs-quote-alt-left quote-icon-left" />
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                    <i className="bx bxs-quote-alt-right quote-icon-right" />
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                            </div>
-                        </div>{/* End testimonial item */}
-                        <div className="swiper-slide">
-                            <div className="testimonial-item">
-                                <p>
-                                    <i className="bx bxs-quote-alt-left quote-icon-left" />
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                                    <i className="bx bxs-quote-alt-right quote-icon-right" />
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                            </div>
-                        </div>{/* End testimonial item */}
+                        <Slider {...settings} >
+                            {aboutData.testimonials.map((item, index) => {
+                                return (
+                                    <div className="swiper-slide" key={index}>
+                                        <div className="testimonial-item">
+                                            <p>
+                                                <i className="quote-icon-left"><FaQuoteLeft /></i>
+                                                {item.description}
+                                                <i className="quote-icon-right"><FaQuoteRight /></i>
+                                            </p>
+                                            <img src={item.image} className="testimonial-img" alt="" />
+                                            <h3>{item.name}</h3>
+                                            <h4>{item.designation}</h4>
+                                        </div>
+                                    </div>
+                                )
+                            })}
                         </Slider>
                     </div>
                     <div className="swiper-pagination" />

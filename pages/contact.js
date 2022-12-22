@@ -1,7 +1,10 @@
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaList, FaMap, FaPhone, FaShareAlt, FaSkype, FaTwitter } from "react-icons/fa";
+import { Data } from '../public/Data';
 
 const Contact = () => {
+  const {aboutMe} = Data;
+
   return (
     <section id="contact" className="contact section-show">
       <div className="container">
@@ -14,7 +17,7 @@ const Contact = () => {
             <div className="info-box">
               <i><FaMap/></i>
               <h3>My Address</h3>
-              <p>Khizersarai gaya,bihar India,824233</p>
+              <p>{aboutMe.address}</p>
             </div>
           </div>
           <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
@@ -22,11 +25,11 @@ const Contact = () => {
               <i><FaShareAlt/></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
-                <a href="#" className="twitter"><FaTwitter /></a>
-                <a href="#" className="facebook"><FaFacebook /></a>
-                <a href="#" className="instagram"><FaInstagram /></a>
-                <a href="#" className="google-plus"><FaSkype /></a>
-                <a href="#" className="linkedin"><FaLinkedin /></a>
+                <a href={aboutMe.twitter} className="twitter"><FaTwitter /></a>
+                <a href={aboutMe.facebook} className="facebook"><FaFacebook /></a>
+                <a href={aboutMe.instagram} className="instagram"><FaInstagram /></a>
+                <a href={aboutMe.address} className="google-plus"><FaSkype /></a>
+                <a href={aboutMe.linkedin} className="linkedin"><FaLinkedin /></a>
               </div>
             </div>
           </div>
@@ -35,14 +38,14 @@ const Contact = () => {
               
               <i><FaEnvelope/></i>
               <h3>Email Me</h3>
-              <p>chhotukumarsow@gmail.com</p>
+              <p>{aboutMe.email}</p>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
               <i><FaPhone/></i>
               <h3>Call Me</h3>
-              <p>+918210118348</p>
+              <p>{aboutMe.phone}</p>
             </div>
           </div>
         </div>
