@@ -55,7 +55,7 @@ const Resume = () => {
                   {item.projects.map((project,_index)=>{
                     return(
                       <>
-                      <p>{_index+1}. <em> {project.link} </em></p>
+                      <a target="_blank" href={project.link} rel="noopener noreferrer">{_index+1}. <em> {project.link} </em></a>
                       <p><ul>
                         <li>{project.technology}</li>
                         {/* <li>{project.description}</li> */}

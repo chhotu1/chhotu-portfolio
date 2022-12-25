@@ -1,3 +1,5 @@
+const long_description= "A seasoned profession in Software Engineer. Experience MEAN & MERN and highly skilled in brainstorming and coding features and enhancements. To contribute my best efforts to the organization with hard work and dedication for the development of the organization.Possesses an understanding developing end-to-end application as per client requirements and quality norms. Adept at conducting automation testing and  performing regular audits to fix bugs & improve work efficiency";
+
 export const Data = {
     aboutMe: {
         name: "Chhotu sow",
@@ -9,7 +11,7 @@ export const Data = {
         freelance: "Available",
         email: "chhotukumarsow@gmail.com",
         address: "Khizersarai gaya,Bihar India,824233",
-        long_description: "A seasoned profession in Software Development. Experience React developer and highly skilled in brainstorming and coding features and enhancements. To contribute my best efforts to the organization with hard work and dedication for the development of the organization.Possesses an understanding developing end-to-end application as per client requirements and quality norms. Adept at conducting automation testing and  performing regular audits to fix bugs & improve work efficiency",
+        long_description: long_description,
         short_description: "I am software engineer",
         designation:"Software Engineer",
         linkedin:"https://in.linkedin.com/in/chhotu-sow-74797318b",
@@ -46,11 +48,11 @@ export const Data = {
                 description: "Angular Developer with 2+ years of professional experience in Development and User Interface Development.Tech stack: Reactjs, JavaScript, jQuery, React Native, HTML, CSS, Bootstrap.Experts in Responsive Design and analyzing and fixing bugs quickly."
             },
             {
-                name: "Chhotu sow", image: "assets/img/testimonials/chhotu.jpg", designation: "MERN & MEARN",
-                description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
+                name: "Chhotu sow", image: "assets/img/testimonials/chhotu.jpg", designation: "MEAN & MERN",
+                description: long_description
             },
             {
-                name: "Bhola kumar", image: "assets/img/testimonials/bhola.jpg", designation: "MERN & MEARN",
+                name: "Bhola kumar", image: "assets/img/testimonials/bhola.jpg", designation: "MEAN & MERN",
                 description: "To become a successful person in a globally renowned organization that would help me to utilize my technical skills and provide me with opportunities for professional growth. Seeking assignments in Software development (Programming) / Web Development(React JS, PHP). Willing to work as a key player in challenging & creative environment. I am an optimistic and enthusiastic individual who enjoys exploring various aspects of life while being highly flexible and adaptive. My personal attributes are adaptability, optimism & sincerity towards the work i do"
             },
             {
@@ -95,5 +97,8 @@ export const Data = {
                 ],
             }
         ],
+    },
+    icons:{
+        facebookIcon:"/assets/icons/social_facebook_icon.svg"
     }
 }

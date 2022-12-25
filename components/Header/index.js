@@ -1,10 +1,13 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 import { FaCross, FaFacebook, FaInstagram, FaLinkedin, FaList, FaTimes, FaTwitter } from "react-icons/fa";
+import { Data } from '../../public/Data';
 const Header = () => {
     const {asPath}=useRouter();
     const [isMobile,setIsMobile] = useState(false)
+    const {aboutMe,icons} = Data;
     return (
         <header id="header" className={asPath!=='/'?'header-top':''}>
             <div className="container">
@@ -24,10 +27,15 @@ const Header = () => {
                     {isMobile?<FaTimes className="bi mobile-nav-toggle bi-x" onClick={()=>setIsMobile(!isMobile)}/>:<FaList onClick={()=>setIsMobile(!isMobile)} className="bi bi-list mobile-nav-toggle" />}
                 </nav>{/* .navbar */}
                 <div className="social-links">
-                    <a href="#" className="twitter"><FaTwitter /></a>
-                    <a href="#" className="facebook"><FaFacebook /></a>
+                    <a className="twitter" target="_blank" href={aboutMe.twitter} rel="noopener noreferrer"><FaTwitter /></a>
+                    <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">
+                        <Image src={icons.facebookIcon} height={30} width={30}/>
+                    </a>
+                    <a className="instagram" target="_blank" href={aboutMe.instagram} rel="noopener noreferrer"><FaTwitter /></a>
+                    <a className="linkedin" target="_blank" href={aboutMe.linkedin} rel="noopener noreferrer"><FaTwitter /></a>
+                    {/* <a href="#" className="facebook"><FaFacebook /></a>
                     <a href="#" className="instagram"><FaInstagram /></a>
-                    <a href="#" className="linkedin"><FaLinkedin /></a>
+                    <a href="#" className="linkedin"><FaLinkedin /></a> */}
                 </div>
             </div>
         </header>
