@@ -1,9 +1,10 @@
 import React from 'react'
-import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaList, FaMap, FaPhone, FaShareAlt, FaSkype, FaTwitter } from "react-icons/fa";
+import Image from 'next/image';
+import { FaEnvelope, FaMap, FaPhone, FaShareAlt } from "react-icons/fa";
 import { Data } from '../public/Data';
 
 const Contact = () => {
-  const {aboutMe} = Data;
+  const { aboutMe, icons } = Data;
 
   return (
     <section id="contact" className="contact section-show">
@@ -15,35 +16,43 @@ const Contact = () => {
         <div className="row mt-2">
           <div className="col-md-6 d-flex align-items-stretch">
             <div className="info-box">
-              <i><FaMap/></i>
+              <i><FaMap /></i>
               <h3>My Address</h3>
               <p>{aboutMe.address}</p>
             </div>
           </div>
           <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
             <div className="info-box">
-              <i><FaShareAlt/></i>
+              <i><FaShareAlt /></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
-                <a href={aboutMe.twitter} className="twitter"><FaTwitter /></a>
-                <a href={aboutMe.facebook} className="facebook"><FaFacebook /></a>
-                <a href={aboutMe.instagram} className="instagram"><FaInstagram /></a>
-                <a href={aboutMe.address} className="google-plus"><FaSkype /></a>
-                <a href={aboutMe.linkedin} className="linkedin"><FaLinkedin /></a>
+                <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">
+                  <Image src={icons.facebookIcon} alt="facebook" height={25} width={25} />
+                </a>
+                <a className="twitter" target="_blank" href={aboutMe.twitter} rel="noopener noreferrer">
+                  <Image src={icons.twitterIcon} alt="facebook" height={25} width={25} />
+                </a>
+                <a className="instagram" target="_blank" href={aboutMe.instagram} rel="noopener noreferrer">
+                  <Image src={icons.instagramIcon} alt="facebook" height={25} width={25} />
+                </a>
+                <a className="linkedin" target="_blank" href={aboutMe.linkedin} rel="noopener noreferrer">
+                  <Image src={icons.linkedinIcon} alt="facebook" height={23} width={23} />
+                </a>
+
               </div>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
-              
-              <i><FaEnvelope/></i>
+
+              <i><FaEnvelope /></i>
               <h3>Email Me</h3>
               <p>{aboutMe.email}</p>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
-              <i><FaPhone/></i>
+              <i><FaPhone /></i>
               <h3>Call Me</h3>
               <p>{aboutMe.phone}</p>
             </div>

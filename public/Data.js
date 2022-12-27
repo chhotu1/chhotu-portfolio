@@ -99,6 +99,9 @@ export const Data = {
         ],
     },
     icons:{
-        facebookIcon:"/assets/icons/social_facebook_icon.svg"
+        facebookIcon:"/assets/icons/social_facebook_icon.svg",
+        twitterIcon:"/assets/icons/social_twitter_icon.svg",
+        linkedinIcon:"/assets/icons/linkedin_icon.svg",
+        instagramIcon:"/assets/icons/instagram_icon.svg",
     }
 }

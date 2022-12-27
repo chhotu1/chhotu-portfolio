@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../public/assets/img/bg.jpg") top right no-repeat;
+  background: #040404 url("../public/assets/img/bg1.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -120,6 +120,9 @@ h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  img {
+    filter: invert(1);
+  }
 }
 
 #header .social-links a:hover {
@@ -1040,6 +1043,9 @@ section .container {
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
+  img {
+    filter: invert(1);
+  }
 }
 
 .contact .info-box .social-links a:hover {
