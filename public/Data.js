@@ -80,6 +80,7 @@ export const Data = {
                 projects: [
                     { link: "https://www.pixlerlab.com/", technology: "Nextjs,Nodejs,Mongodb", description: "" },
                     { link: "https://hadsup.com/", technology: "Nextjs", description: "" },
+                    { link: "https://ryna.co/", technology: "Nextjs", description: "" },
                     { link: "https://app.hadsup.com/", technology: "Angular", description: "" },
                     { link: "https://1099prep.com/", technology: "Reactjs,MYsql,Laravel", description: "" },
                 ],
