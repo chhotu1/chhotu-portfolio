@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image';
-import { FaEnvelope, FaMap, FaPhone, FaShareAlt } from "react-icons/fa";
 import { Data } from '../public/Data';
 
 const Contact = () => {
@@ -16,14 +15,14 @@ const Contact = () => {
         <div className="row mt-2">
           <div className="col-md-6 d-flex align-items-stretch">
             <div className="info-box">
-              <i><FaMap /></i>
+              <i><Image src={icons.locationIcon} alt="facebook" height={23} width={23} /></i>
               <h3>My Address</h3>
               <p>{aboutMe.address}</p>
             </div>
           </div>
           <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
             <div className="info-box">
-              <i><FaShareAlt /></i>
+              <i><Image src={icons.shareIcon} alt="facebook" height={23} width={23} /></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
                 <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">
@@ -45,14 +44,14 @@ const Contact = () => {
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
 
-              <i><FaEnvelope /></i>
+              <i><Image src={icons.emailIcon} alt="facebook" height={23} width={23} /></i>
               <h3>Email Me</h3>
               <p>{aboutMe.email}</p>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
-              <i><FaPhone /></i>
+              <i><Image src={icons.phoneIcon} alt="facebook" height={23} width={23} /></i>
               <h3>Call Me</h3>
               <p>{aboutMe.phone}</p>
             </div>

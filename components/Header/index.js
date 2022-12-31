@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
-import { FaList, FaTimes } from "react-icons/fa";
 import { Data } from '../../public/Data';
 const Header = () => {
     const {asPath}=useRouter();
@@ -24,7 +23,7 @@ const Header = () => {
                         <li onClick={()=>setIsMobile(false)}><Link href="/portfolio" className={asPath==='/portfolio'?'active':''}>Portfolio</Link></li>
                         <li onClick={()=>setIsMobile(false)}><Link href="/contact" className={asPath==='/contact'?'active':''}>Contact</Link></li>
                     </ul>
-                    {isMobile?<FaTimes className="bi mobile-nav-toggle bi-x" onClick={()=>setIsMobile(!isMobile)}/>:<FaList onClick={()=>setIsMobile(!isMobile)} className="bi bi-list mobile-nav-toggle" />}
+                    {isMobile?<Image src={icons.closeIcon} alt="facebook" height={30} width={30} className="bi mobile-nav-toggle bi-x" onClick={()=>setIsMobile(!isMobile)}/>:<Image src={icons.menuIcon} alt="facebook" height={30} width={30} onClick={()=>setIsMobile(!isMobile)} className="bi bi-list mobile-nav-toggle" />}
                 </nav>{/* .navbar */}
                 <div className="social-links">
                     <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">

@@ -104,5 +104,16 @@ export const Data = {
         twitterIcon:"/assets/icons/social_twitter_icon.svg",
         linkedinIcon:"/assets/icons/linkedin_icon.svg",
         instagramIcon:"/assets/icons/instagram_icon.svg",
+        menuIcon:"/assets/icons/menu.svg",
+        closeIcon:"/assets/icons/close.svg",
+        chevronRightIcon:"/assets/icons/chevron_right.svg",
+        rightquoteIcon:"/assets/icons/rightquote.svg",
+        smileIcon:"/assets/icons/smile.svg",
+        textSnippetIcon:"/assets/icons/text_snippet.svg",
+        whiteFileIcon:"/assets/icons/white_file.svg",
+        emailIcon:"/assets/icons/email.svg",
+        locationIcon:"/assets/icons/location.svg",
+        shareIcon:"/assets/icons/share.svg",
+        phoneIcon:"/assets/icons/phone.svg",
     }
 }

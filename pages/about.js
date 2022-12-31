@@ -1,10 +1,10 @@
 import React from 'react'
 import { ProgressBar } from 'react-bootstrap';
 import Slider from "react-slick";
-import { FaChevronRight, FaHeadphonesAlt, FaQuoteLeft, FaQuoteRight, FaRegAddressCard, FaRegFile, FaRegSmile } from 'react-icons/fa';
 import { Data } from '../public/Data';
+import Image from 'next/image';
 const About = () => {
-    const { aboutData,aboutMe } = Data;
+    const { aboutData,aboutMe,icons } = Data;
     const settings = {
         dots: true,
         infinite: true,
@@ -61,18 +61,18 @@ const About = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i><FaChevronRight /></i> <strong>Birthday:</strong> <span>{aboutMe.dob}</span></li>
-                                    <li><i><FaChevronRight /></i> <strong>Website:</strong> <span>{aboutMe.website}</span></li>
-                                    <li><i><FaChevronRight /></i> <strong>Phone:</strong> <span>{aboutMe.phone}</span></li>
-                                    <li><i><FaChevronRight /></i> <strong>City:</strong> <span>{aboutMe.address}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/> </i> <strong>Birthday:</strong> <span>{aboutMe.dob}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Website:</strong> <span>{aboutMe.website}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Phone:</strong> <span>{aboutMe.phone}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>City:</strong> <span>{aboutMe.address}</span></li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i><FaChevronRight /></i> <strong>Age:</strong> <span>{aboutMe.age}</span></li>
-                                    <li><i><FaChevronRight /></i> <strong>Degree:</strong> <span>{aboutMe.degree}</span></li>
-                                    <li><i><FaChevronRight /></i> <strong>PhEmailone:</strong> <span>{aboutMe.email}</span></li>
-                                    <li><i><FaChevronRight /></i> <strong>Freelance:</strong> <span>{aboutMe.freelance}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Age:</strong> <span>{aboutMe.age}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Degree:</strong> <span>{aboutMe.degree}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>PhEmailone:</strong> <span>{aboutMe.email}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Freelance:</strong> <span>{aboutMe.freelance}</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -85,28 +85,28 @@ const About = () => {
                 <div className="row">
                     <div className="col-lg-3 col-md-6">
                         <div className="count-box">
-                            <i><FaRegSmile /></i>
+                            <i><Image src={icons.smileIcon} alt="" width={30} height={30}/></i>
                             <span className="purecounter">788</span>
                             <p>Happy Clients</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
                         <div className="count-box">
-                            <i><FaRegFile /></i>
+                            <i><Image src={icons.textSnippetIcon} alt="" width={30} height={30}/></i>
                             <span className="purecounter">788</span>
                             <p>Projects</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div className="count-box">
-                            <i><FaHeadphonesAlt /></i>
+                            <i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i>
                             <span className="purecounter">788</span>
                             <p>Hours Of Support</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div className="count-box">
-                            <i><FaRegAddressCard /></i>
+                            <i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i>
                             <span className="purecounter">88</span>
                             <p>Awards</p>
                         </div>
@@ -165,9 +165,11 @@ const About = () => {
                                     <div className="swiper-slide" key={index}>
                                         <div className="testimonial-item">
                                             <p>
-                                                <i className="quote-icon-left"><FaQuoteLeft /></i>
+                                                <i className="quote-icon-left"><Image src={icons.rightquoteIcon} alt="" width={40} height={40}/></i>
                                                 {item.description}
-                                                <i className="quote-icon-right"><FaQuoteRight /></i>
+                                                <i className="quote-icon-right">
+                                                <Image src={icons.rightquoteIcon} alt="" width={40} height={40}/>
+                                                </i>
                                             </p>
                                             <img src={item.image} className="testimonial-img" alt="" />
                                             <h3>{item.name}</h3>
