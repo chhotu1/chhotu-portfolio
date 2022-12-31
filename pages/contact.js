@@ -5,6 +5,12 @@ import { Data } from '../public/Data';
 const Contact = () => {
   const { aboutMe, icons } = Data;
 
+  const handleSumbit=(e)=>{
+    e.preventDefault();
+    alert("Form submitted successfully");
+    document.getElementById("contact-form").reset();
+  }
+
   return (
     <section id="contact" className="contact section-show">
       <div className="container">
@@ -57,7 +63,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form action="forms/contact.php" method="post" role="form" className="php-email-form mt-4">
+        <form onSubmit={handleSumbit}  id="contact-form" role="form" className="php-email-form mt-4">
           <div className="row">
             <div className="col-md-6 form-group">
               <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
