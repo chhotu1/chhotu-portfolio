@@ -1,10 +1,6 @@
 /**
-* Template Name: Personal - v4.9.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Author: Chhotu sow
 */
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -120,9 +116,6 @@ h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  img {
-    filter: invert(1);
-  }
 }
 
 #header .social-links a:hover {
@@ -1043,9 +1036,6 @@ section .container {
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
-  img {
-    filter: invert(1);
-  }
 }
 
 .contact .info-box .social-links a:hover {
@@ -1202,13 +1192,15 @@ section .container {
 
 .slick-dots {
   bottom: 0;
-  li{
+
+  li {
     width: 55px;
     height: 3px;
     margin: 0 10px;
     // background-color: #18d26e;
     background-color: #fff;
-    @media(max-width:767px){
+
+    @media(max-width:767px) {
       width: 30px;
     }
 
@@ -1220,9 +1212,11 @@ section .container {
         }
       }
     }
+
     button {
       width: 55px;
       height: 3px;
+
       &:before {
         background-color: #b0b1b5;
       }
@@ -1234,15 +1228,19 @@ section .container {
       &::before {
         width: 55px;
         height: 3px;
-        @media(max-width:767px){
-          width:30px;
+
+        @media(max-width:767px) {
+          width: 30px;
         }
-      &::before{
+
+        &::before {
           width: 55px;
           height: 3px;
-          @media(max-width:767px){
-            width:30px;
+
+          @media(max-width:767px) {
+            width: 30px;
           }
+
           content: "";
           // color: $yellow;
           background-color:#e0e4fb;
@@ -1262,15 +1260,15 @@ section .container {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }

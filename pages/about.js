@@ -3,6 +3,7 @@ import { ProgressBar } from 'react-bootstrap';
 import Slider from "react-slick";
 import { Data } from '../public/Data';
 import Image from 'next/image';
+import { getAge } from '../src/shared/utils';
 const About = () => {
     const { aboutData,aboutMe,icons } = Data;
     const settings = {
@@ -61,18 +62,20 @@ const About = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/> </i> <strong>Birthday:</strong> <span>{aboutMe.dob}</span></li>
-                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Website:</strong> <span>{aboutMe.website}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>DOB:</strong> <span>{aboutMe.dob}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/> </i> <strong>Birthday:</strong> <span>11<sup>th</sup> April</span></li>
+
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Phone:</strong> <span>{aboutMe.phone}</span></li>
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>City:</strong> <span>{aboutMe.address}</span></li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Age:</strong> <span>{aboutMe.age}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Age:</strong> <span>{getAge(aboutMe.dob)}</span></li>
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Degree:</strong> <span>{aboutMe.degree}</span></li>
-                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>PhEmailone:</strong> <span>{aboutMe.email}</span></li>
-                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Freelance:</strong> <span>{aboutMe.freelance}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Email:</strong> <span>{aboutMe.email}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Website:</strong> <span>{aboutMe.website}</span></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -81,7 +84,7 @@ const About = () => {
                 </div>
             </div>{/* End About Me */}
             {/* ======= Counts ======= */}
-            <div className="counts container">
+            {/* <div className="counts container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6">
                         <div className="count-box">
@@ -112,7 +115,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>{/* End Counts */}
+            </div> */}
+            {/* End Counts */}
             {/* ======= Skills  ======= */}
             <div className="skills container">
                 <div className="section-title">
@@ -132,9 +136,10 @@ const About = () => {
                         )
                     })}
                 </div>
-            </div>{/* End Skills */}
+            </div>
+            {/* End Skills */}
             {/* ======= Interests ======= */}
-            <div className="interests container">
+            {/* <div className="interests container">
                 <div className="section-title">
                     <h2>Interests</h2>
                 </div>
@@ -150,9 +155,9 @@ const About = () => {
                         )
                     })}
                 </div>
-            </div>
+            </div> */}
             {/* ======= Testimonials ======= */}
-            <div className="testimonials container">
+            {/* <div className="testimonials container">
                 <div className="section-title">
                     <h2>Testimonials</h2>
                 </div>
@@ -184,7 +189,8 @@ const About = () => {
                 </div>
                 <div className="owl-carousel testimonials-carousel">
                 </div>
-            </div>{/* End Testimonials  */}
+            </div> */}
+            {/* End Testimonials  */}
         </section>
     )
 }

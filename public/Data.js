@@ -7,6 +7,7 @@ export const Data = {
         website: "chhotu-portfolio.vercel.app",
         phone: "+918210118348",
         age: 27,
+        birthday:"11 April",
         degree: "Master in computer application",
         freelance: "Available",
         email: "chhotukumarsow@gmail.com",
@@ -15,9 +16,9 @@ export const Data = {
         short_description: "I am software engineer",
         designation:"Software Engineer",
         linkedin:"https://in.linkedin.com/in/chhotu-sow-74797318b",
-        facebook:"https://www.facebook.com/",
+        facebook:"https://www.facebook.com/chhotu.sow",
         twitter:"https://www.twitter.com/",
-        instagram:"https://www.instagram.com/"
+        instagram:"https://www.instagram.com/chhotu_114/"
     },
     aboutData: {
         skill: [
@@ -90,7 +91,7 @@ export const Data = {
                     "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views"
                 ],
                 projects: [
-                    { link: "http://control.trackugo.in/", technology: "Laravel,Mongodb", description: "" },
+                    // { link: "http://control.trackugo.in/", technology: "Laravel,Mongodb", description: "" },
                 ],
             }
         ],

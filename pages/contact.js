@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
           <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
             <div className="info-box">
-              <i><Image src={icons.shareIcon} alt="facebook" height={23} width={23} /></i>
+              <i><Image src={icons.shareIcon} alt="facebook" height={25} width={25} /></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
                 <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">
@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form onSubmit={handleSumbit}  id="contact-form" role="form" className="php-email-form mt-4">
+        {/* <form onSubmit={handleSumbit}  id="contact-form" role="form" className="php-email-form mt-4">
           <div className="row">
             <div className="col-md-6 form-group">
               <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
@@ -84,7 +84,7 @@ const Contact = () => {
             <div className="sent-message">Your message has been sent. Thank you!</div>
           </div>
           <div className="text-center"><button type="submit">Send Message</button></div>
-        </form>
+        </form> */}
       </div>
     </section>
   )

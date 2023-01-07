@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
-import { Data } from '../../public/Data';
+import { Data } from '../../../public/Data';
 const Header = () => {
     const {asPath}=useRouter();
     const [isMobile,setIsMobile] = useState(false)
@@ -19,8 +19,8 @@ const Header = () => {
                         <li onClick={()=>setIsMobile(false)}><Link href="/" className={asPath==='/'?'active':''}>Home</Link></li>
                         <li onClick={()=>setIsMobile(false)}><Link href="/about" className={asPath==='/about'?'active':''}>About</Link></li>
                         <li onClick={()=>setIsMobile(false)}><Link href="/resume" className={asPath==='/resume'?'active':''}>Resume</Link></li>
-                        <li onClick={()=>setIsMobile(false)}><Link href="/services" className={asPath==='/services'?'active':''}>Services</Link></li>
-                        <li onClick={()=>setIsMobile(false)}><Link href="/portfolio" className={asPath==='/portfolio'?'active':''}>Portfolio</Link></li>
+                        {/* <li onClick={()=>setIsMobile(false)}><Link href="/services" className={asPath==='/services'?'active':''}>Services</Link></li> */}
+                        {/* <li onClick={()=>setIsMobile(false)}><Link href="/portfolio" className={asPath==='/portfolio'?'active':''}>Portfolio</Link></li> */}
                         <li onClick={()=>setIsMobile(false)}><Link href="/contact" className={asPath==='/contact'?'active':''}>Contact</Link></li>
                     </ul>
                     {isMobile?<Image src={icons.closeIcon} alt="facebook" height={30} width={30} className="bi mobile-nav-toggle bi-x" onClick={()=>setIsMobile(!isMobile)}/>:<Image src={icons.menuIcon} alt="facebook" height={30} width={30} onClick={()=>setIsMobile(!isMobile)} className="bi bi-list mobile-nav-toggle" />}
