@@ -6,7 +6,7 @@ export const Data = {
         dob: "14 August 1996",
         website: "chhotu-portfolio.vercel.app",
         phone: "+918210118348",
-        age: 30,
+        age: 27,
         degree: "Master in computer application",
         freelance: "Available",
         email: "chhotukumarsow@gmail.com",
@@ -54,10 +54,6 @@ export const Data = {
             {
                 name: "Bhola kumar", image: "assets/img/testimonials/bhola.jpg", designation: "MEAN & MERN",
                 description: "To become a successful person in a globally renowned organization that would help me to utilize my technical skills and provide me with opportunities for professional growth. Seeking assignments in Software development (Programming) / Web Development(React JS, PHP). Willing to work as a key player in challenging & creative environment. I am an optimistic and enthusiastic individual who enjoys exploring various aspects of life while being highly flexible and adaptive. My personal attributes are adaptability, optimism & sincerity towards the work i do"
-            },
-            {
-                name: "Mukesh kumar", image: "assets/img/testimonials/testimonials-1.jpg", designation: "Nodejs developer",
-                description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
             },
         ],
         interests:["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"],
