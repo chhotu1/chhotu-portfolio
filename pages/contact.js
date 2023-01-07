@@ -34,9 +34,9 @@ const Contact = () => {
                 <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">
                   <Image src={icons.facebookIcon} alt="facebook" height={25} width={25} />
                 </a>
-                <a className="twitter" target="_blank" href={aboutMe.twitter} rel="noopener noreferrer">
+                {/* <a className="twitter" target="_blank" href={aboutMe.twitter} rel="noopener noreferrer">
                   <Image src={icons.twitterIcon} alt="facebook" height={25} width={25} />
-                </a>
+                </a> */}
                 <a className="instagram" target="_blank" href={aboutMe.instagram} rel="noopener noreferrer">
                   <Image src={icons.instagramIcon} alt="facebook" height={25} width={25} />
                 </a>
@@ -52,7 +52,7 @@ const Contact = () => {
 
               <i><Image src={icons.emailIcon} alt="facebook" height={23} width={23} /></i>
               <h3>Email Me</h3>
-              <p>{aboutMe.email}</p>
+              <p> <a href={`mailto:${aboutMe.email}`}>{aboutMe.email}</a></p>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">

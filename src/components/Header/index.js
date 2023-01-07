@@ -22,6 +22,8 @@ const Header = () => {
                         {/* <li onClick={()=>setIsMobile(false)}><Link href="/services" className={asPath==='/services'?'active':''}>Services</Link></li> */}
                         {/* <li onClick={()=>setIsMobile(false)}><Link href="/portfolio" className={asPath==='/portfolio'?'active':''}>Portfolio</Link></li> */}
                         <li onClick={()=>setIsMobile(false)}><Link href="/contact" className={asPath==='/contact'?'active':''}>Contact</Link></li>
+                        <li onClick={()=>setIsMobile(false)}><Link href="/achievement" className={asPath==='/achievement'?'active':''}>Achievement</Link></li>
+                        <li onClick={()=>setIsMobile(false)}><Link href="/gallery" className={asPath==='/gallery'?'active':''}>Gallery</Link></li>
                     </ul>
                     {isMobile?<Image src={icons.closeIcon} alt="facebook" height={30} width={30} className="bi mobile-nav-toggle bi-x" onClick={()=>setIsMobile(!isMobile)}/>:<Image src={icons.menuIcon} alt="facebook" height={30} width={30} onClick={()=>setIsMobile(!isMobile)} className="bi bi-list mobile-nav-toggle" />}
                 </nav>{/* .navbar */}
@@ -29,14 +31,14 @@ const Header = () => {
                     <a className="facebook" target="_blank" href={aboutMe.facebook} rel="noopener noreferrer">
                         <Image src={icons.facebookIcon} alt="facebook" height={30} width={30}/>
                     </a>
-                    <a className="twitter" target="_blank" href={aboutMe.twitter} rel="noopener noreferrer">
-                        <Image src={icons.twitterIcon} alt="facebook" height={25} width={25}/>
-                    </a>
+                    {/* <a className="twitter" target="_blank" href={aboutMe.twitter} rel="noopener noreferrer">
+                        <Image src={icons.twitterIcon} alt="twitter" height={25} width={25}/>
+                    </a> */}
                     <a className="instagram" target="_blank" href={aboutMe.instagram} rel="noopener noreferrer">
-                        <Image src={icons.instagramIcon} alt="facebook" height={25} width={25}/>
+                        <Image src={icons.instagramIcon} alt="instagram" height={25} width={25}/>
                     </a>
                     <a className="linkedin" target="_blank" href={aboutMe.linkedin} rel="noopener noreferrer">
-                        <Image src={icons.linkedinIcon} alt="facebook" height={20} width={20}/>
+                        <Image src={icons.linkedinIcon} alt="linkedin" height={25} width={25}/>
                     </a>
                 </div>
             </div>

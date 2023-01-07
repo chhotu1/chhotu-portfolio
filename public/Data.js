@@ -112,5 +112,20 @@ export const Data = {
         locationIcon:"/assets/icons/location.svg",
         shareIcon:"/assets/icons/share.svg",
         phoneIcon:"/assets/icons/phone.svg",
-    }
+    },
+    achievement:[
+        {title:"Certificate Of Appreciation",image:"/assets/img/achievement/achiev1.jpeg",date:"6 Jan 2023"},
+        {title:"Mentoring Champion Award",image:"/assets/img/achievement/achiev2.jpeg",date:"6 Jan 2023"},
+        {title:"Employee Of The Month",image:"/assets/img/achievement/achiev3.jpg",date:"April 2022"}
+    ],
+    galleries:[
+        {image:"/assets/img/gallery/gallery1.jpeg"},
+        {image:"/assets/img/gallery/gallery2.jpeg"},
+        {image:"/assets/img/gallery/gallery3.jpeg"},
+        {image:"/assets/img/gallery/gallery4.jpeg"},
+        {image:"/assets/img/gallery/gallery5.jpeg"},
+        {image:"/assets/img/gallery/gallery6.jpeg"},
+        {image:"/assets/img/gallery/gallery7.jpeg"},
+        {image:"/assets/img/gallery/gallery9.jpeg"},
+    ],
 }
