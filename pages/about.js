@@ -52,7 +52,7 @@ const About = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/me.jpg" className="img-fluid" alt="" style={{ height: 360, width: '100%' }} />
+                        <img src="assets/img/me3.jpeg" className="img-fluid" alt="" style={{ height: 360, width: '100%' }} />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3>{aboutMe.designation}</h3>
@@ -66,7 +66,8 @@ const About = () => {
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/> </i> <strong>Birthday:</strong> <span>11<sup>th</sup> April</span></li>
 
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Phone:</strong> <span>{aboutMe.phone}</span></li>
-                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>City:</strong> <span>{aboutMe.address}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Address:</strong> <span>{aboutMe.address}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Pincode:</strong> <span>{aboutMe.pincode}</span></li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
@@ -74,6 +75,8 @@ const About = () => {
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Age:</strong> <span>{getAge(aboutMe.dob)}</span></li>
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Degree:</strong> <span>{aboutMe.degree}</span></li>
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Email:</strong> <span>{aboutMe.email}</span></li>
+                                    <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>State:</strong> <span>{aboutMe.state}</span></li>
+
                                     <li><i><Image src={icons.chevronRightIcon} alt="" width={30} height={30}/></i> <strong>Website:</strong> <span>{aboutMe.website}</span></li>
 
                                 </ul>

@@ -1,4 +1,4 @@
-const long_description= "A seasoned profession in Software Engineer. Experience MEAN & MERN and highly skilled in brainstorming and coding features and enhancements. To contribute my best efforts to the organization with hard work and dedication for the development of the organization.Possesses an understanding developing end-to-end application as per client requirements and quality norms. Adept at conducting automation testing and  performing regular audits to fix bugs & improve work efficiency";
+const long_description= "A seasoned profession in Software Developer. Experience MEAN & MERN and highly skilled in brainstorming and coding features and enhancements. To contribute my best efforts to the organization with hard work and dedication for the development of the organization.Possesses an understanding developing end-to-end application as per client requirements and quality norms. Adept at conducting automation testing and  performing regular audits to fix bugs & improve work efficiency";
 
 export const Data = {
     aboutMe: {
@@ -11,14 +11,16 @@ export const Data = {
         degree: "Master in computer application",
         freelance: "Available",
         email: "chhotukumarsow@gmail.com",
-        address: "Khizersarai gaya,Bihar India,824233",
+        address: "Bendari, Khizersarai gaya",
         long_description: long_description,
-        short_description: "I am software engineer",
-        designation:"Software Engineer",
+        short_description: "I am Software Developer",
+        designation:"Software Developer",
         linkedin:"https://in.linkedin.com/in/chhotu-sow-74797318b",
         facebook:"https://www.facebook.com/chhotu.sow",
         twitter:"https://www.twitter.com/",
-        instagram:"https://www.instagram.com/chhotu_114/"
+        instagram:"https://www.instagram.com/chhotu_114/",
+        state:"Bihar",
+        pincode:"824233"
     },
     aboutData: {
         skill: [
@@ -42,7 +44,7 @@ export const Data = {
         testimonials: [
             {
                 name: "Sumant", image: "assets/img/testimonials/sumant.jpg", designation: "React native & Laravel developer",
-                description: "Experienced software engineer with a demonstrated history of working in the information technology and services industry.skilled in Laravel,angular,react js,ionic,react native and flutter"
+                description: "Experienced software Developer with a demonstrated history of working in the information technology and services industry.skilled in Laravel,angular,react js,ionic,react native and flutter"
             },
             {
                 name: "Priya Raj", image: "assets/img/testimonials/priya.jpg", designation: "Graphic designer & angular developer",
@@ -68,11 +70,14 @@ export const Data = {
         ],
         experience: [
             {
-                id: 1, title: "MEAN & MERN STACK DEVELOPER", company_name: "PixlerLab", year: "2021-Present", address: "E-237AA, Continental Tower, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 140308", description: [
+                id: 1, title: "Software Developer", company_name: "PixlerLab", year: "2021-Present", address: "E-237AA, Continental Tower, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 140308", description: [
                     "Good Problem solving and analytical skill",
                     "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views",
                     "Worked on the restful API to create the services and test on postman and used in angular ,react js and next js call and bind the data",
-                    "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views"
+                    "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views",
+                    "Developing custom directives and Services in Angular",
+                    "Used redux to store data globally and for easy retrieval of data to any component in the app.",
+                    "Used React Refs, Controlled and Un Controlled react components for different use cases"
                 ],
                 projects: [
                     { link: "https://www.pixlerlab.com/", technology: "Nextjs,Nodejs,Mongodb", description: "" },

@@ -13,7 +13,7 @@ const Header = () => {
                 <h1><Link href="/">{aboutMe.name}</Link></h1>
                 {/* Uncomment below if you prefer to use an image logo navbar-mobile  bi mobile-nav-toggle bi-x */}
                 {/* <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> */}
-                <h2>I'm a passionate <span>Software Engineer</span> from Bihar,India.</h2>
+                <h2>I'm a passionate <span>Software Developer</span> from Bihar,India.</h2>
                 <nav id="navbar" className={`navbar ${isMobile?'navbar-mobile':''}`}>
                     <ul>
                         <li onClick={()=>setIsMobile(false)}><Link href="/" className={asPath==='/'?'active':''}>Home</Link></li>

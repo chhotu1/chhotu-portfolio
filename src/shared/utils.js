@@ -1,4 +1,5 @@
 export const getAge = (dateString) => {
+    // const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
     if (dateString) {
         var today = new Date();
         var birthDate = new Date(dateString);
