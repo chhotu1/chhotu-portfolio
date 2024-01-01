@@ -11,7 +11,7 @@ export const Data = {
         degree: "Master of Computer Application",
         freelance: "Available",
         email: "chhotukumarsow@gmail.com",
-        address: "Beldari, Khizersarai gaya",
+        address: "Beldari, Khizersarai, Gaya",
         long_description: long_description,
         short_description: "I am Software Developer",
         designation:"Software Developer",
@@ -63,14 +63,14 @@ export const Data = {
     },
     resumeData: {
         education: [
-            { id: 1, title: "Masters in Computer Application", year: "2017-2019", college: "NH-05, Ludhiana - Chandigarh State Hwy, Sahibzada Ajit Singh Nagar, Punjab 140413", description: "" },
-            { id: 2, title: "Bachelors's in Computer Application", year: "2014-2017", college: "Mirza Ghalib College, Gaya,Bihar", description: "" },
+            { id: 1, title: "Master of Computer Application", year: "2017-2019", college: "NH-05, Ludhiana - Chandigarh State Hwy, Sahibzada Ajit Singh Nagar, Punjab 140413", description: "" },
+            { id: 2, title: "Bachelor of Computer Application", year: "2014-2017", college: "Mirza Ghalib College, Gaya,Bihar", description: "" },
             { id: 3, title: "Intermediate", year: "2012-2014", college: "Jagjivan College,Gaya,Bihar", description: "" },
             { id: 4, title: "Matriculation ", year: "2011-2012", college: "Yashwant High School, Khizersarai - Gaya, Bihar, India", description: "" },
         ],
         experience: [
             {
-                id: 1, title: "Software Developer", company_name: "PixlerLab", year: "2021-Present", address: "E-237AA, Continental Tower, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 140308", description: [
+                id: 1, title: "Software Developer",company_website:"https://www.pixlerlab.com/", company_name: "PixlerLab", year: "2021-Present", address: "E-237AA, Continental Tower, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 140308", description: [
                     "Good Problem solving and analytical skill",
                     "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views",
                     "Worked on the restful API to create the services and test on postman and used in angular ,react js and next js call and bind the data",
@@ -88,12 +88,11 @@ export const Data = {
                 ],
             },
             {
-                id: 2, title: "ANGULAR DEVELOPER", company_name: "WeaveBytes Infotech Pvt Ltd", year: "2019-2020", address: "Software company in Kharar, SAS Nagar, Punjab", description: [
-                    "Working knowledge of front end optimization and performance techniques",
+                id: 2, title: "ANGULAR DEVELOPER", company_website:"",company_name: "WeaveBytes Infotech Pvt Ltd", year: "2019-2020", address: "Software company in Kharar, SAS Nagar, Punjab", description: [
                     "Cooperating with the back-end developer in the process of building the restful API",
-                    "worked on the restful API to create the services and test on postman and used in angular http service call and bind the data",
-                    "Built web pages that are more user-interactive using jQuery AJAX, JSON, Angular JS, and JavaScript, Bootstrap",
-                    "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views"
+                    "Worked on the restful API to create the services and test on postman and used in angular http service call and bind the data",
+                    "Complete documentation and procedures for installation and maintenanc",
+                    "Worked with web development technologies like Typescript, JavaScript, Bootstrap 3, CSS, HTML, Python,Django"
                 ],
                 projects: [
                     // { link: "http://control.trackugo.in/", technology: "Laravel,Mongodb", description: "" },

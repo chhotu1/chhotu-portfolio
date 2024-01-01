@@ -17,7 +17,7 @@ const Resume = () => {
               <p><em>{aboutMe.long_description}</em></p>
               <p>
               </p><ul>
-                <li>{aboutMe.address}</li>
+                <li>{aboutMe.address},Bihar</li>
                 <li>{aboutMe.phone}</li>
                 <li>{aboutMe.email}</li>
               </ul>
@@ -42,7 +42,7 @@ const Resume = () => {
                 <div className="resume-item" key={index}>
                   <h4>{item.title}</h4>
                   <h5>{item.year}</h5>
-                  <p><em>{item.address} </em></p>
+                  <p><a rel="noopener noreferrer" target="_blank" href={item.company_website}>{item.company_name}</a> <em>{item.address} </em></p>
                   <p>
                   </p><ul>
                     {item.description.map((desc, i) => {

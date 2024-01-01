@@ -636,6 +636,11 @@ section .container {
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
+.resume .resume-item a{
+  color: #18d26e;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
 
 .resume .resume-item h4 {
   line-height: 18px;
