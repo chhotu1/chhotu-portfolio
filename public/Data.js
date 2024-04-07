@@ -74,10 +74,10 @@ export const Data = {
                     "Good Problem solving and analytical skill",
                     "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views",
                     "Worked on the restful API to create the services and test on postman and used in angular ,react js and next js call and bind the data",
-                    "Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views",
-                    "Developing custom directives and Services in Angular",
                     "Used redux to store data globally and for easy retrieval of data to any component in the app.",
-                    "Used React Refs, Controlled and Un Controlled react components for different use cases"
+                    "Used React Refs, Controlled and Un Controlled react components for different use cases",
+                    "Developed custom Redux Form scripts for updating Redux store using immutable and Redux Thunk",
+                    "Used redux to store data globally and for easy retrieval of data to any component in the app"
                 ],
                 projects: [
                     { link: "https://hadsup.com/", technology: "ReactJs,Nextjs,Angular", description: "" },
