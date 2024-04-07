@@ -80,11 +80,10 @@ export const Data = {
                     "Used React Refs, Controlled and Un Controlled react components for different use cases"
                 ],
                 projects: [
-                    { link: "https://www.pixlerlab.com/", technology: "Nextjs,Nodejs,Mongodb", description: "" },
-                    { link: "https://hadsup.com/", technology: "Nextjs", description: "" },
-                    { link: "https://ryna.co/", technology: "Nextjs", description: "" },
-                    { link: "https://app.hadsup.com/", technology: "Angular", description: "" },
+                    { link: "https://hadsup.com/", technology: "ReactJs,Nextjs,Angular", description: "" },
+                    { link: "https://ryna.co/", technology: "ReactJs,Nextjs", description: "" },
                     { link: "https://1099prep.com/", technology: "Reactjs,MYsql,Laravel", description: "" },
+                    { link: "https://www.smartreachai.com/", technology: "ReactJs,NextJs", description: "" },
                 ],
             },
             {
@@ -118,9 +117,10 @@ export const Data = {
         phoneIcon:"/assets/icons/phone.svg",
     },
     achievement:[
+        {title:"Employee Of The Month",image:"/assets/img/achievement/achiev3.jpg",date:"April 2022"},
         {title:"Certificate Of Appreciation",image:"/assets/img/achievement/achiev1.jpeg",date:"6 Jan 2023"},
         {title:"Mentoring Champion Award",image:"/assets/img/achievement/achiev2.jpeg",date:"6 Jan 2023"},
-        {title:"Employee Of The Month",image:"/assets/img/achievement/achiev3.jpg",date:"April 2022"}
+        {title:"Employee Of The Year",image:"/assets/img/achievement/achive4.jpeg",date:"April 2024"}
     ],
     galleries:[
         {image:"/assets/img/gallery/gallery3.jpeg"},
@@ -132,5 +132,8 @@ export const Data = {
         {image:"/assets/img/gallery/gallery6.jpeg"},
         {image:"/assets/img/gallery/gallery7.jpeg"},
         {image:"/assets/img/gallery/gallery9.jpeg"},
+        {image:"/assets/img/gallery/gallery10.jpeg"},
+        {image:"/assets/img/gallery/gallery11.jpeg"},
+        {image:"/assets/img/gallery/gallery12.jpeg"},
     ],
 }
